@@ -8,6 +8,8 @@
 layout: home
 ---
 
-Hello! My name is Evan and I'm a PhD student at the University of Waterloo IQC studying quantum computing and machine learning.
+Hello! My name is Evan - I'm a PhD student at the University of Waterloo IQC studying under Achim Kempf in the <a href="https://uwaterloo.ca/physics-of-information-lab/">Physics of Information Lab</a>. I'm interested in quantum information and machine learning, and have previously studied ways to improve the performance of quantum circuits run on near-term quantum computers.
 
-You can find an up-to-date list of my publications on my <a href="https://scholar.google.com/citations?user=JLvD4RkAAAAJ&hl=en&oi=ao">Google Scholar</a> page.
+## Research
+
+You can find a list of my publications on my <a href="https://scholar.google.com/citations?user=JLvD4RkAAAAJ&hl=en&oi=ao">Google Scholar</a> page.
