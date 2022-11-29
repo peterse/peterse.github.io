@@ -31,15 +31,14 @@ minima:
 
   # generate social links in footer
   social_links:
-    twitter: e6peters
-    github:  peterse
-    linkedin: evan-peters-359322a7
-    qcse: forky40
-
+    - { platform: github,  user_url: "https://github.com/peterse" }
+    - { platform: twitter, user_url: "https://twitter.com/e6peters" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/evan-peters-359322a7" }
+    - { platform: github, user_url: "https://quantumcomputing.stackexchange.com/users/1939/forky40" }
 
 # Build settings
 # theme: minima
-remote_theme: jekyll/minima
+remote_theme: jekyll/minima@1e6da7df8e42e56f4506d78137b778bff36b2993
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
