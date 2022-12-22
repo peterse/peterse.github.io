@@ -24,9 +24,9 @@ email: peterse583 [at] gmail (dot) com
 description: >- # this means to ignore newlines until "baseurl:"
   Homepage for Evan Peters (in progress)
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://peterse.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 google_verify: 2fZpv3V75OdXC4Jt8cJfMXAIvb-3h0cAVlHj-6aBeSE
-  
+
 minima:
   date_format: "%b %-d, %Y"
 
@@ -43,7 +43,7 @@ remote_theme: jekyll/minima@1e6da7df8e42e56f4506d78137b778bff36b2993
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
-
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
