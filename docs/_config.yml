@@ -39,6 +39,7 @@ minima:
 
 # Build settings
 # theme: minima
+# make sure SITEMAP is the last plugin!
 remote_theme: jekyll/minima@1e6da7df8e42e56f4506d78137b778bff36b2993
 plugins:
   - jekyll-feed
