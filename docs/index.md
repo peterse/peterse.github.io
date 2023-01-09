@@ -10,6 +10,9 @@ layout: home
 
 Hello! My name is Evan - I'm a PhD student at the University of Waterloo. I'm interested in quantum information and machine learning, and have previously studied ways to improve the performance of quantum circuits run on near-term quantum computers.
 
-## Research
+<h3> Research </h3>
 
 You can find a list of my publications on my <a href="https://scholar.google.com/citations?user=JLvD4RkAAAAJ&hl=en&oi=ao">Google Scholar</a> page.
+
+<hr style="width:85%;color:gray;margin:auto;margin-bottom:.5cm;margin-top:1.5cm;" >
+
