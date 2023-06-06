@@ -27,6 +27,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://peterse.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 google_verify: 2fZpv3V75OdXC4Jt8cJfMXAIvb-3h0cAVlHj-6aBeSE
 
+markdown: kramdown
+
 minima:
   date_format: "%b %-d, %Y"
 

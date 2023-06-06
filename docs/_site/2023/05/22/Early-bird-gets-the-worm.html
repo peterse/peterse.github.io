@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Early bird gets the worm: Analyzing quant-ph arXiv submission timing | Evan Peters (quantum)</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Early bird gets the worm: Analyzing quant-ph arXiv submission timing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="One of the goals of science is to produce ideas that improve our understanding of the natural world. But there are a lot of ideas to consider, and so we have to find ways to help us choose what authors we pay attention to and what work we cite." />
+<meta property="og:description" content="One of the goals of science is to produce ideas that improve our understanding of the natural world. But there are a lot of ideas to consider, and so we have to find ways to help us choose what authors we pay attention to and what work we cite." />
+<link rel="canonical" href="http://localhost:4000/2023/05/22/Early-bird-gets-the-worm.html" />
+<meta property="og:url" content="http://localhost:4000/2023/05/22/Early-bird-gets-the-worm.html" />
+<meta property="og:site_name" content="Evan Peters (quantum)" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-05-22T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Early bird gets the worm: Analyzing quant-ph arXiv submission timing" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2023/05/22/Early-bird-gets-the-worm.html"},"@type":"BlogPosting","url":"http://localhost:4000/2023/05/22/Early-bird-gets-the-worm.html","headline":"Early bird gets the worm: Analyzing quant-ph arXiv submission timing","dateModified":"2023-05-22T00:00:00-04:00","datePublished":"2023-05-22T00:00:00-04:00","description":"One of the goals of science is to produce ideas that improve our understanding of the natural world. But there are a lot of ideas to consider, and so we have to find ways to help us choose what authors we pay attention to and what work we cite.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Evan Peters (quantum)" />
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Evan Peters (quantum)</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About me</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Early bird gets the worm: Analyzing quant-ph arXiv submission timing</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2023-05-22T00:00:00-04:00" itemprop="datePublished">
+        May 22, 2023
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>One of the goals of science is to produce ideas that improve our understanding of the natural world. But there are a lot of ideas to consider, and so we have to find ways to help us choose what authors we pay attention to and what work we cite.</p>
+
+<p>In this post I investigate that process appearing in an unexpected way.</p>
+
+<h2 id="arxiv-submission-logic">ArXiv submission logic</h2>
+
+<p>The arXiv is an online preprint server. You can use arXiv look up articles before they’re published in a peer-reviewed journal (hence “preprints”). This is useful because researchers want their work to be read and cited by other researchers. Some researchers really, <em>really</em> want this, for obvious reasons. However there are a lot of preprints to sift through, and so you have to find ways to get your articles seen.</p>
+
+<p>One reliable way to make sure many researchers notice your fresh preprint from among dozens of others submitted that day is to submit your article to arXiv just after 2:00 PM New York time. The mechanism is simple:</p>
+
+<ol>
+  <li>Each weeknight, subscribers to arXiv’s email lists recieve a daily digest of articles submitted the day before.</li>
+  <li>There is a cutoff time for when “the day before” begins.</li>
+  <li>It is natural to order preprints using the time that they were submitted after that cutoff.</li>
+</ol>
+
+<p>Submissions are listed in this ordering in both the daily email digest and the <a href="https://arxiv.org/list/quant-ph/new">daily list of new submissions</a>, so that the first preprint seen by everyone is the first preprint that was submitted after the cutoff time of 2:00 PM in New York.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<p><img src="/assets/2023-05-22/email_screenshot.png" alt="Sample digest screenshot" />
+<em>An excerpt from the email that I receive every morning listing preprints submitted the previous weekday. The red box highlights when the submitting author sent the paper to arXiv for publication.</em></p>
+
+<p>There is a remarkable correlation between an preprint’s placement on this list and the number of citations that preprint will go on to have. In high energy physics, the first few entries end up with roughly 200% more citations than entries appearing at the end of the list <a href="https://arxiv.org/abs/0907.4740">(Ginsparg, 2009)</a><sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>. One can’t say whether appearing at the top of the list <em>causes</em> a preprint to have a greater number of citations<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>, but this is a sound wager to make if every job interview and grant application and basically the entirety of your future career success depends on whether people are reading and citing your articles. And it appears many people are making this bet.<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup></p>
+
+<p>In the remainder of this post I will study this behavior for the exclusively <code class="language-plaintext highlighter-rouge">quant-ph</code> (“quantum physics”) arXiv category, I am a part of.<sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote" rel="footnote">5</a></sup></p>
+
+<h2 id="ornithology-101">Ornithology 101</h2>
+
+<p>To give an idea of what this behavior looks like, here is a plot of the time of day that each quant-ph preprint was submitted to the arXiv in 2022:</p>
+
+<p><img src="/assets/2023-05-22/ebgtw_figure1.png" alt="Figure 1" />
+<em>The number of quant-ph arXiv submissions in 2022, by the hour. The inset shows a large number of submissions within one minute after the cutoff (and perhaps several that were too early by a few seconds!)</em></p>
+
+<p>Clearly there is something happening around 2:00 pm, the cutoff time for new submissions. I will call an article submitted within 5 minutes of the cuttoff an <strong>early bird</strong> submission (remember: these are the articles that appear first on the mail list).</p>
+
+<p>It is really very easy to analyze trends in the behavior of early bird submissions because the metadata for every submitted preprint are publicly available online. This behavior is becoming more common, which confirms my experience looking at the new submissions list every morning:</p>
+
+<p><img src="/assets/2023-05-22/ebgtw_figure2.png" alt="Figure 2" />
+<em>The number of total submissions and early bird submissions in quant-ph is growing exponentially, though the latter is growing faster. There was a sharp increase in early bird submissions right after Ginsparg published his analysis showing that this behavior was correlated with higher citation count.</em></p>
+
+<p>In the last 10 years the fraction of early bird submissions has gone from negligble to about 6%. Currently there’s about 30 submissions appearing per day, so on a typical day there’s about two early bird submissions appearing at the very top of the lists<sup id="fnref:6" role="doc-noteref"><a href="#fn:6" class="footnote" rel="footnote">6</a></sup>.</p>
+
+<h2 id="birdwatching">Birdwatching</h2>
+
+<p>An interesting aspect of submitting at the arXiv cutoff is that you either know about it or you don’t. This means we have to be careful analyzing more detailed statistics of early bird submissions. For example, if we find that an individual submitted 50% of their preprints at the cutoff time, this could mean (1) they submit every other preprint in this way (2) they found out about the early bird trick after they’d already posted several papers but have only ever posted at the cutoff since. Any analysis needs to account for arXiv submission behavior being time-dependent and relatively rare event for any given author.</p>
+
+<p>Keeping this in mind, here is how early bird submissions compare to total submissions among submitters with at least one early bird submission.</p>
+
+<p><img src="/assets/2023-05-22/ebgtw_app1.png" alt="Figure 3" />
+<em>If you’ve ever made an early bird submission, how did you submit your other papers? A 45-degree line on this plot indicates submitters who have submitted every paper right at the cutoff, while the very first column indicates an author made a single early bird submission so far. Beware: The more left and up you go, the more likely the entry is random noise!</em></p>
+
+<p>There are quite a few authors who submitted an early bird preprint as their only preprint in their career (so far). Indeed, this is a growing trend:</p>
+
+<p><img src="/assets/2023-05-22/ebgtw_figure3.png" alt="Figure 4" />
+<em>Blue means the number of first-ever submissions that year, while red is the number of times authors did their first-ever early bird submissions that year. Pink means the author’s first-ever early bird submission was also their first-ever submission. The growth of this final category has been constant since 2020, possibly related to the start of the pandemic and a cessation of in-person research activity?</em></p>
+
+<p>Finally, we can dive a bit deeper into individual behaviors with a case study of a few prolific early birds. We will look at how the submission behavior changed in time for the set of the 16 submitters who most frequently made early bird submissions:</p>
+
+<p><img src="/assets/2023-05-22/ebgtw_figure4.png" alt="Figure 5" />
+<em>Each box represents a single author. Each point is an arXiv submission, with the vertical axis indicating the total number of early bird submissions by that author. A straight line with an upwards slope indicates a period in which every submission was early bird, while a flat line is a period in which none of the submissions were early bird.</em></p>
+
+<p>Presumably these authors never <em>forget</em> the early bird submission trick, but clearly some folks don’t keep up with it as time goes on. Maybe they got tenure, or left academia, or moved to a part of the world where 2:00 PM ET is some awful hour of the night. Each line tells its own story.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>For now, there’s a reliable way to get your arXiv preprint seen by a of your scientific subfield (quantum or otherwise) community by having it appear at the top of the email/new submissions list. But a growing number of people are competing for this position, so you’ll have to be fast. Prior work suggests that beyond about the 10th position, the correlation between citations and email list rank disappears. If you believe this to be a causal relationship, (and you lose nothing by believing so), you will endeavor towards early bird submissions as close to the cutoff as possible (and you lose nothing by doing so).</p>
+
+<p>Possibly one could employ some kind of program towards this task. But after competing submitters have squeezed all human latency out of the process via automation, a natural next step is to squeeze network latency out of the process too. If submission timing translates to additional citations and additional citations translate to another round of grant funding, maybe earmarking a round trip flight to Ithaca to connect to the local network hosting the submission server is rational behavior. At the least, this would be entertaining perhaps even <a href="https://en.wikipedia.org/wiki/Flash_Boys">book-worthy</a>.</p>
+
+<!-- With exponential growth of arXiv submissions (but only so many 'good' spots in the new submissions list) and the amount of money put towards quantum computing research, there is ample opportunity  
+
+we might imagine a future similar to the chain of events that lead from the discovery of arbitrage opportunities in NYSE(???) to high frequency trading to the construction of a direct fiber-optic line from Chicago to NYC in order gain microseconds of advantage in the latency (Flash Boys) - a future where your survival as an academic has been so closely tied to mundane 'citation hacks' that you would be willing to... -->
+
+<p>Any effect that announcement placements might have on citation/readership outcomes could be nullified by randomizing the order of the daily arXiv digest email per recipient (and by regenerating the new submissions webpage per visitor IP address) such that no submission is ever globally ‘first’.</p>
+
+<hr />
+
+<h2 id="aftermatter">Aftermatter</h2>
+
+<h4 id="methodology">Methodology</h4>
+
+<p>I gathered article metadata using the arXiv OAI-PMH interface and arXiv API. I used a cutoff time of 14:00 Eastern for all (initial) submissions after Jan 1, 2017 and 16:00 Eastern before then, EDT or EST depending on daylight savings.</p>
+
+<h4 id="limitations">Limitations</h4>
+
+<p>This analysis does not control for any authors who may have changed their name or submission email during the timespan considered. I do not try to control for accidental early bird submissions.</p>
+
+<h4 id="acknowledgements">Acknowledgements</h4>
+
+<p>Parts of the analysis code were written by Github Copilot and GPT-4 (with additional credit due to Stack Overflow and Github users who supplied training data). None of this writeup was produced using LLMs. I used <code class="language-plaintext highlighter-rouge">matplotlib</code> to produce plots. I used the <a href="https://github.com/mloesch/sickle"><code class="language-plaintext highlighter-rouge">sickle</code></a> OAI-PMH client to access records.</p>
+
+<hr />
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>This is not strictly true: Occassionally a submission from before the cutoff (sometimes by several days) will appear at the top of the list. This is probably because that paper had a run-in with arXiv moderation. Truly the slow rat sometimes gets the cheese. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Paul Ginsparg is the original creator of arXiv. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>For example, the kind of person who times their submission for a second after the cutoff time might be a generally ambitious or dedicated researcher. Or an early-bird submission might be a way an author signals confidence in a particular manuscript, though this seems unlikely given the analysis. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>I am unaware of any replication of Ginsparg’s research for specifically the quant-ph category. I am interested to find out if the pattern holds. <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:5" role="doc-endnote">
+      <p>I actually tried to submit a <a href="https://arxiv.org/abs/2209.05523">preprint</a> right at the cutoff recently but I was about 8 minutes late :( <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:6" role="doc-endnote">
+      <p>This is a bit of a simplification since the analysis includes submissions that are cross-listed as quant-ph, which appear in an entirely different section than the primary quant-ph submissions, but are otherwise ordered according to their submission after cutoff time. <a href="#fnref:6" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div><a class="u-url" href="/2023/05/22/Early-bird-gets-the-worm.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <!-- <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p> -->
+      </div>
+      <!-- <div class="footer-col">
+        <p></p>
+      </div> -->
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://github.com/peterse" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://twitter.com/e6peters" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://www.linkedin.com/in/evan-peters-359322a7" target="_blank" title="linkedin">
+    <svg class="svg-icon grey">
+      <use xlink:href="/assets/minima-social-icons.svg#linkedin"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://quantumcomputing.stackexchange.com/users/1939/forky40" target="_blank" title="stackoverflow">
+    <svg class="svg-icon grey">
+      <use xlink:href="/assets/minima-social-icons.svg#stackoverflow"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer></body>
+
+</html>

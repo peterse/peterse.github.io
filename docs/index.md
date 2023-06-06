@@ -14,5 +14,9 @@ Hello! My name is Evan - I'm a PhD student at the University of Waterloo. I'm in
 
 You can find a list of my publications on my <a href="https://scholar.google.com/citations?user=JLvD4RkAAAAJ&hl=en&oi=ao">Google Scholar</a> page.
 
+<h3> Other work </h3>
+
+I will sometimes write about other topics, which you can find as posts below.
+
 <hr style="width:85%;color:gray;margin:auto;margin-bottom:.5cm;margin-top:1.5cm;" >
 
