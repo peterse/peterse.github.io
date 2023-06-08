@@ -79,6 +79,7 @@ Any effect that announcement placements might have on citation/readership outcom
 
 ## Aftermatter
 
+Please bring up any questions/comments on [twitter](https://twitter.com/e6peters/status/1666109224504504320).
 
 #### Methodology
 
@@ -90,7 +91,7 @@ This analysis does not control for any authors who may have changed their name o
 
 #### Acknowledgements
 
-Parts of the analysis code were written by Github Copilot and GPT-4 (with additional credit due to Stack Overflow and Github users who supplied training data). None of this writeup was produced using LLMs. I used `matplotlib` to produce plots. I used the [`sickle`](https://github.com/mloesch/sickle) OAI-PMH client to access records.
+Parts of the analysis code were written by Github Copilot and GPT-4 (with additional credit due to Stack Overflow and Github users who supplied training data). None of this writeup was produced using LLMs. Thanks to Shayan Majidy for providing great feedback. I used `matplotlib` to produce plots. I used the [`sickle`](https://github.com/mloesch/sickle) OAI-PMH client to access records. 
 
 ---
 
