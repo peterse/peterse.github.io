@@ -80,7 +80,7 @@ People who time their submissions to appear near the top of the announcement ema
 
 ## Aftermatter
 
-Feel free to bring up any questions/comments on [twitter](https://twitter.com/e6peters/).
+Feel free to bring up any questions/comments on [twitter](https://twitter.com/e6peters/status/1775175471006683438).
 
 #### Methodology, Limitations
 
