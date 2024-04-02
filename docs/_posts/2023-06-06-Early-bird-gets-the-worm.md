@@ -22,7 +22,7 @@ Submissions are listed in this ordering in both the daily email digest and the [
 ![Sample digest screenshot](/assets/2023-05-22/email_screenshot.png)
 *An excerpt from the email that I receive every morning listing preprints submitted the previous weekday. The red box highlights when the submitting author sent the paper to arXiv for publication.*
 
-There is a remarkable correlation between an preprint's placement on this list and the number of citations that preprint will go on to have. In high energy physics, the first few entries end up with roughly 200% more citations than entries appearing at the end of the list [(Ginsparg, 2009)](https://arxiv.org/abs/0907.4740)[^2]. One can't say whether appearing at the top of the list _causes_ a preprint to have a greater number of citations[^3], but this is a sound wager to make if every job interview and grant application and basically the entirety of your future career success depends on whether people are reading and citing your articles. And it appears many people are making this bet.[^4]
+There is a remarkable correlation between an preprint's placement on this list and the number of citations that preprint will go on to have. In high energy physics, the first few entries end up with roughly 200% more citations than entries appearing at the end of the list [(Haque and Ginsparg, 2009)](https://arxiv.org/abs/0907.4740)[^2]. One can't say whether appearing at the top of the list _causes_ a preprint to have a greater number of citations[^3], but this is a sound wager to make if every job interview and grant application and basically the entirety of your future career success depends on whether people are reading and citing your articles. And it appears many people are making this bet.[^4]
 
 In the remainder of this post I will study this behavior for the exclusively `quant-ph` ("quantum physics") arXiv category, I am a part of.[^5]
 
@@ -67,7 +67,7 @@ Presumably these authors never _forget_ the early bird submission trick, but cle
 
 For now, there's a reliable way to get your arXiv preprint seen by a of your scientific subfield (quantum or otherwise) community by having it appear at the top of the email/new submissions list. But a growing number of people are competing for this position, so you'll have to be fast. Prior work suggests that beyond about the 10th position, the correlation between citations and email list rank disappears. If you believe this to be a causal relationship, (and you lose nothing by believing so), you will endeavor towards early bird submissions as close to the cutoff as possible (and you lose nothing by doing so).
 
-Possibly one could employ some kind of program towards this task. But after competing submitters have squeezed all human latency out of the process via automation, a natural next step is to squeeze network latency out of the process too. If submission timing translates to additional citations and additional citations translate to another round of grant funding, maybe earmarking a round trip flight to Ithaca to connect to the local network hosting the submission server is rational behavior. At the least, this would be entertaining perhaps even [book-worthy](https://en.wikipedia.org/wiki/Flash_Boys).
+Possibly one could employ some kind of program towards this task. But after competing submitters have squeezed all human latency out of the process via automation, a natural next step is to squeeze network latency out of the process too. If submission timing translates to additional citations and additional citations translate to another round of grant funding, maybe earmarking a round trip flight to Ithaca to connect to the local network hosting the submission server is rational behavior. At the least, this would be entertaining - perhaps even [book-worthy](https://en.wikipedia.org/wiki/Flash_Boys).
 
 <!-- With exponential growth of arXiv submissions (but only so many 'good' spots in the new submissions list) and the amount of money put towards quantum computing research, there is ample opportunity  
 
@@ -83,7 +83,7 @@ Please bring up any questions/comments on [twitter](https://twitter.com/e6peters
 
 #### Methodology
 
-I gathered article metadata using the arXiv OAI-PMH interface and arXiv API. I used a cutoff time of 14:00 Eastern for all (initial) submissions after Jan 1, 2017 and 16:00 Eastern before then, EDT or EST depending on daylight savings. 
+I gathered article metadata using the arXiv OAI-PMH interface and arXiv API. I used a cutoff time of 14:00 Eastern for all (initial) submissions after Jan 1, 2017 and 16:00 Eastern before then, EDT or EST depending on daylight savings. The dataset consists of about 105,000 arXiv submissions from April 2007 to December 2022, with the exception of Fig. 5 which includes data from as early as the arXiv API can query.
 
 #### Limitations
 
