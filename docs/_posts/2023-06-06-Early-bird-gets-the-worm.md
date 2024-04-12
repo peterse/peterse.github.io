@@ -2,6 +2,7 @@
 layout: post
 title: "Early bird gets the worm: Analyzing quant-ph arXiv submission timing"
 ---
+*[[See here for Part 2](https://peterse.github.io/2024/04/02/Survival-of-the-firstest.html)]*
 
 One of the goals of science is to produce ideas that improve our understanding of the natural world. But there are a lot of ideas to consider, and so we have to find ways to help us choose what authors we pay attention to and what work we cite. 
 
@@ -101,7 +102,7 @@ Parts of the analysis code were written by Github Copilot and GPT-4 (with additi
 
 [^3]: For example, the kind of person who times their submission for a second after the cutoff time might be a generally ambitious or dedicated researcher. Or an early-bird submission might be a way an author signals confidence in a particular manuscript, though this seems unlikely given the analysis.
 
-[^4]: I am unaware of any replication of Ginsparg's research for specifically the quant-ph category. I am interested to find out if the pattern holds.
+[^4]: I am unaware of any replication of Ginsparg's research for specifically the quant-ph category. <s>I am interested to find out if the pattern holds </s> So I replicated it myself [here](https://peterse.github.io/2024/04/02/Survival-of-the-firstest.html).
 
 [^5]: I actually tried to submit a [preprint](https://arxiv.org/abs/2209.05523) right at the cutoff recently but I was about 8 minutes late :(
 
