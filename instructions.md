@@ -4,3 +4,4 @@ bundle exec jekyll serve
 
 NOTES
  - if changing directory structure, copy `sitemap.xml` from docs/_site into root
+ - if the instructions stop working, `bundle update` worked once.
