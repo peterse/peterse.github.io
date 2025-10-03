@@ -8,11 +8,11 @@ Quantum error correction (QEC) is a hot research topic among quantum computing r
 
 ### QEC eats QCSE?
 
-Quantum Computing Stack Exchange ((QCSE)[https://quantumcomputing.stackexchange.com/]) is a Q&A site for quantum information topics. Here we see more evidence of a shift in interest towards QEC, as reflected by trends in QCSE questions. Last month, for the first time ever, over half of the questions asked on QCSE were quantum error correction! Is this more evidence that interest in QEC displaced a broader curiousity about quantum computing?
+Quantum Computing Stack Exchange ([QCSE](https://quantumcomputing.stackexchange.com/)) is a Q&A site for quantum information topics. Here we see more evidence of a shift in interest towards QEC, as reflected by trends in QCSE questions. Last month, for the first time ever, over half of the questions asked on QCSE were quantum error correction! Is this more evidence that interest in QEC displaced a broader curiousity about quantum computing?
 
 **Not really.** Instead, the overall user base of QCSE is fleeing, while the number of QEC questions is holding strong. This is driven in part by a steady stream of questions about `stim`, a software library for simulating QEC whose creator - Craig Gidney - is very helpful and prolific on QCSE.
 
-If we categorize questions according to their tag (indicates what the question topic is), we find a steep increase in QEC-related tags (left). But this hides a (huge drop)[https://quantumcomputing.meta.stackexchange.com/questions/669/why-the-lull-in-traffic-is-it-network-wide] in the total number of user questions (right):
+If we categorize questions according to their tag (indicates what the question topic is), we find a steep increase in QEC-related tags (left). But this hides a [huge drop](https://quantumcomputing.meta.stackexchange.com/questions/669/why-the-lull-in-traffic-is-it-network-wide) in the total number of user questions (right):
 
 ![QEC question fractions](/assets/2025-09-06/qcse_fractions.png)
 *The average fraction of questions with a QEC-related is approaching 50% (shading reflects the confidence interval assuming a Binomial distribution, just to give an impression of variance). Total QCSE usage has been trending downward in the last 12 months, but there's still a steady stream of QEC interest.*
@@ -34,22 +34,22 @@ While counting `quant-ph` submissions is a decent proxy for what researchers are
 
 ### QEC eats scirate?
 
-(Scirate)[] is an ~~online popularity contest~~ website that lets people upvote and comment arXiv submissions[^2]. It is used almost exclusively by the quantum computing research community. Usage of scirate is growing rapidly, as the number of `quant-ph` submissions balloons beyond what is easily skimmable in a daily email[^3]. We can see here that QEC-related make up a growing fraction of submissions that get attention on on Scirate[^4].
+[Scirate]() is an ~~online popularity contest~~ website that lets people upvote and comment arXiv submissions[^2]. It is used almost exclusively by the quantum computing research community. Usage of scirate is growing rapidly, as the number of `quant-ph` submissions balloons beyond what is easily skimmable in a daily email[^3]. We can see here that QEC-related make up a growing fraction of submissions that get attention on on Scirate[^4].
 
 ![QEC scirate question fractions](/assets/2025-09-06/qec_scirate.png)
 *Among papers that get attention (at least 5 upvotes) on Scirate, QEC represents a growing fraction. It is a "cool" subfield.*
 
 ### Bonus: QML: hot or not?
 
-Out of personal curiousity, I took a look at how QEC compares to another hot subfield, "quantum machine learning" (QML). Even with all the hype that QML has a bad reputation for, the growth rate for this subfield is actually slightly lower than QEC in the same time period! But, as is clear from Scirate, QML papers make up a shrinking fraction of papers that receive attention on Scirate.
+Out of personal curiousity, I took a look at how QEC compares to another hot subfield, "quantum machine learning" (QML). Even with all the hype that QML has a (bad) reputation for, the growth rate for submissions in this subfield is actually slightly lower than QEC in the same time period! But, as is clear from Scirate, QML papers make up a shrinking fraction of the cool papers.
 
 ![QML scirate question fractions](/assets/2025-09-06/qml.png)
-*The number of QML-related submissions is growing rapidly, but this topic is clearly `"uncool" as measured by Scirate voters.*
+*The number of QML-related submissions is growing rapidly, but this topic is decidedly `"uncool" as measured by Scirate voters.*
 
 
 ### Methods
 
-The keywords for categorizing `quant-ph` submissions are below. Note that these lists are short, so the trend lines can be thought of as lower bounds. For finding QEC submissions, the token "code" is too cross-disciplinary and gives thousands of non-QEC hits.
+The keywords for categorizing `quant-ph` submissions are below. Note that these lists are short, so the trend lines can be thought of as lower bounds. Obviously this is a fuzzy matching process and submissions can be cross-disciplinary, so treat these numbers as loose estimates.
 
 ```
 QEC hits:
@@ -102,7 +102,7 @@ I used the `scirate` API, so thanks to Vincent Russo.
 
 ---
 
-[^1]: The entire metadata for arXiv is available on Kaggle: (link)[https://www.kaggle.com/datasets/Cornell-University/arxiv]
+[^1]: The entire metadata for arXiv is available on Kaggle: [link](https://www.kaggle.com/datasets/Cornell-University/arxiv)
 [^2]: Early on there was some debate among people using Scirate, and to this day no one really knows what an upvote on scirate means. I will look into that in a future post.
-[^3]: I mean this literally, in the sense that daily arXiv digest emails for `quant-ph` are now sometimes longer than the email length that gmail is willing to display by default, meaning that some submissions will not even appear in the email unless you (exploit arXiv's ordering system)[https://peterse.github.io/2023/06/06/Early-bird-gets-the-worm.html].
+[^3]: I mean this literally, in the sense that daily arXiv digest emails for `quant-ph` are now sometimes longer than the email length that gmail is willing to display by default, meaning that some submissions will not even appear in the email unless you [exploit arXiv's ordering system](https://peterse.github.io/2023/06/06/Early-bird-gets-the-worm.html).
 [^4]: Its actually really hard to do statistics on Scirate behavior, since upvotes are highly nonstationary (the  number of daily Scirate users grows over time) but also have very limited statistics (less than 50ish papers per day with large fluctuations). For example, comparing a submission's scites to the average number of scites requires computing a moving average with a window that is small enough to reflect a roughly-stationary process but large enough to be meaningful.
