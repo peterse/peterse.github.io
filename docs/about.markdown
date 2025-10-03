@@ -4,7 +4,7 @@ title: Research
 permalink: /about/
 ---
 
-I do research on machine learning and quantum information at University of Waterloo /  Perimeter Institute for Theoretical Physics. 
+I currently work at Xanadu. I previously did research on machine learning and quantum information at University of Waterloo /  Perimeter Institute for Theoretical Physics. 
 
 **Research timeline**
 

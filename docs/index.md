@@ -8,12 +8,12 @@
 layout: home
 ---
 
-I do research in quantum information, error correction, and machine learning, and have previously studied ways to improve the performance of quantum circuits run on near-term quantum computers. I do quantum computing Q&A as <a href="https://quantumcomputing.stackexchange.com/users/1939/forky40">@forky40</a>.
+I am a quantum scientist at Xanadu studying quantum machine learning. I was previously a postdoc and PhD student at University of Waterloo studying machine learning for error correction and topics at the intersection of quantum information and  learning theory. I also do quantum computing Q&A as <a href="https://quantumcomputing.stackexchange.com/users/1939/forky40">@forky40</a>.
 
 
 <h2> Select publications </h2>
- - _Bounds and guarantees for learning and entanglement._ <a href="https://arxiv.org/abs/2404.07277
-">2404.07277</a> (2024). 
+ - _Sample importance for data-driven decoding._ <a href="https://arxiv.org/abs/2505.22741
+">2505.22741</a> (2025). 
  - _Generalization despite overfitting in quantum machine learning models._ <a href="https://quantum-journal.org/papers/q-2023-12-20-1210/">Quantum</a> 7 (2023).
  - _Qubit assignment using time reversal._ <a href="https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.3.040333">PRX Quantum</a> (2022).
 
@@ -36,10 +36,10 @@ Complete list: <a href="https://scholar.google.com/citations?user=JLvD4RkAAAAJ&h
 </ul>
 <hr style="width:95%;color:gray;margin:auto;margin-bottom:.5cm;margin-top:0.5cm;" >
 
-<h2> Conference talks / Group seminars</h2>
+<!-- <h2> Conference talks / Group seminars</h2> -->
 
 
- 16. <span style="font-size:small;"> INRIA (Paris).  Talk: Sample importance for Data‑Driven Decoding. July 23, 2025. </span>
+ <!-- 16. <span style="font-size:small;"> INRIA (Paris).  Talk: Sample importance for Data‑Driven Decoding. July 23, 2025. </span>
  15. <span style="font-size:small;"> Eisert group seminar. Talk: Sample importance for Data‑Driven Decoding.  July 16, 2025. </span>
  14. <span style="font-size:small;"> ML4QT workshop (Heilbronn). Talk: Sample importance for Data‑Driven Decoding.  July 8, 2025. </span>
  13. <span style="font-size:small;"> Eisert group QML seminar. Talk: Bounds and Guarantees for learning and entanglement.  May 16, 2024. </span>
@@ -53,5 +53,5 @@ Complete list: <a href="https://scholar.google.com/citations?user=JLvD4RkAAAAJ&h
  4. <span style="font-size:small;"> APS March meeting. Talk: Qubit assignment on NISQ hardware using Simulated Annealing and a Loschmidt Echo heuristic. Mar 16, 2022. </span>
  3. <span style="font-size:small;"> Second annual International Workshop on Quantum Computing Software. Talk: Large scale multi-node simulations of Z2 gauge theory quantum circuits using Google Cloud Platform. Nov 15, 2021. </span>
  2. <span style="font-size:small;"> Chicago quantum exchange workshop on feature maps. Talk: Machine learning of high dimensional data on a noisy quantum processor. Apr 16, 2021. </span>
- 1. <span style="font-size:small;"> Stanford Linear Accelerator AI seminar. Talk: Machine learning of high dimensional data on a noisy quantum processor. Dec, 2020. </span>
+ 1. <span style="font-size:small;"> Stanford Linear Accelerator AI seminar. Talk: Machine learning of high dimensional data on a noisy quantum processor. Dec, 2020. </span> -->
 
