@@ -32,9 +32,9 @@ So, publication activity in the area of QEC and fault tolerance is blowing up su
 
 While counting `quant-ph` submissions is a decent proxy for what researchers are interested in and spending time on, it doesn't tell us whether QEC is _cool_. 
 
-### QEC eats scirate?
+### QEC eats Scirate?
 
-[Scirate]() is an ~~online popularity contest~~ website that lets people upvote and comment arXiv submissions[^2]. It is used almost exclusively by the quantum computing research community. Usage of scirate is growing rapidly, as the number of `quant-ph` submissions balloons beyond what is easily skimmable in a daily email[^3]. We can see here that QEC-related make up a growing fraction of submissions that get attention on on Scirate[^4].
+[Scirate]() is an ~~online popularity contest~~ online platform that lets people upvote and comment on arXiv submissions[^2]. It is used almost exclusively by the quantum computing research community. Usage of scirate is growing rapidly, as the number of `quant-ph` submissions balloons beyond what is easily skimmable in a daily email[^3]. We can see here that QEC-related make up a growing fraction of submissions that get attention on on Scirate[^4].
 
 ![QEC scirate question fractions](/assets/2025-09-06/qec_scirate.png)
 *Among papers that get attention (at least 5 upvotes) on Scirate, QEC represents a growing fraction. It is a "cool" subfield.*
@@ -95,6 +95,7 @@ QML hits:
 	quantum machine learning: 1265
     barren plateau: 307
 ```
+I used [SEDE](https://data.stackexchange.com/) and ChatGPT for analyzing QCSE trends, the [arXiv Kaggle dataset](https://www.kaggle.com/datasets/Cornell-University/arxiv) for `quant-ph` trends, and the `scirate` API for Scirate trends. 
 
 #### Acknowledgments
 
