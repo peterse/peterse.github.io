@@ -34,18 +34,22 @@ While counting `quant-ph` submissions is a decent proxy for what researchers are
 
 ### QEC eats Scirate?
 
-[Scirate]() is an ~~online popularity contest~~ online platform that lets people upvote and comment on arXiv submissions[^2]. It is used almost exclusively by the quantum computing research community. Usage of scirate is growing rapidly, as the number of `quant-ph` submissions balloons beyond what is easily skimmable in a daily email[^3]. We can see here that QEC-related make up a growing fraction of submissions that get attention on on Scirate[^4].
+[Scirate]() is an ~~online popularity contest~~ online platform that lets people upvote and comment on arXiv submissions[^2]. It is used almost exclusively by the quantum computing research community. Usage of scirate is growing rapidly, as the number of `quant-ph` submissions balloons beyond what is easily skimmable in a daily email. I don't know what an upvote on Scirate means specifically[^3]. To match the social media theme of Scirate, we will say a paper is _cool_ if it gets attention on Scirate, and _uncool_ otherwise. We can see here that QEC-related make up a growing fraction of cool submissions[^4].
 
 ![QEC scirate question fractions](/assets/2025-09-06/qec_scirate.png)
-*Among papers that get attention (at least 5 upvotes) on Scirate, QEC represents a growing fraction. It is a "cool" subfield.*
+*Among papers that get attention (at least 5 upvotes) on Scirate, QEC represents a growing fraction. It is a cool subfield. In contrast, NISQ is becoming less-cool even as its overall publication rate holds steady.*
 
-### Bonus: QML: hot or not?
+### Bonus: is QML cool or uncool?
 
 Out of personal curiousity, I took a look at how QEC compares to another hot subfield, "quantum machine learning" (QML). Even with all the hype that QML has a (bad) reputation for, the growth rate for submissions in this subfield is actually slightly lower than QEC in the same time period! But, as is clear from Scirate, QML papers make up a shrinking fraction of the cool papers.
 
 ![QML scirate question fractions](/assets/2025-09-06/qml.png)
-*The number of QML-related submissions is growing rapidly, but this topic is decidedly `"uncool" as measured by Scirate voters.*
+*The number of QML-related submissions is growing rapidly, but this topic is decidedly uncool as measured by Scirate voters.*
 
+
+## Discussion
+
+The clear takeaway is that QEC's popularity is growing rapidly. In a way, this is both expected and healthy: we expect fault tolerance (FT) to be necessary for many of the promised speedups in quantum computing. NISQ was the idea that we could develop useful quantum algorithms before building an FTQC, but the revealed preferences of the quantum community cast doubt on that idea. We should perhaps keep an eye on this trend, since there will come a day when we have the FTQCs and now we need to run something on them.
 
 ### Methods
 
@@ -104,6 +108,6 @@ I used the `scirate` API, so thanks to Vincent Russo.
 ---
 
 [^1]: The entire metadata for arXiv is available on Kaggle: [link](https://www.kaggle.com/datasets/Cornell-University/arxiv)
-[^2]: Early on there was some debate among people using Scirate, and to this day no one really knows what an upvote on scirate means. I will look into that in a future post.
+[^2]: Early on there was some debate among people using Scirate, and to this day it is unclear to me what an upvote on scirate means. This is not a new issue: e.g. see the conversations [here](https://groups.google.com/g/scirate/c/WAHKx8TAUo8). My personal guess is that the median scientist has a reflexive-but-exagerrated belief in their own objectivity, and is therefore extra susceptible to social persuasion. But to be useful, any theory of what a scite means should be grounded in the behavioral patterns we can observe on Scirate. 
 [^3]: I mean this literally, in the sense that daily arXiv digest emails for `quant-ph` are now sometimes longer than the email length that gmail is willing to display by default, meaning that some submissions will not even appear in the email unless you [exploit arXiv's ordering system](https://peterse.github.io/2023/06/06/Early-bird-gets-the-worm.html).
 [^4]: Its actually really hard to do statistics on Scirate behavior, since upvotes are highly nonstationary (the  number of daily Scirate users grows over time) but also have very limited statistics (less than 50ish papers per day with large fluctuations). For example, comparing a submission's scites to the average number of scites requires computing a moving average with a window that is small enough to reflect a roughly-stationary process but large enough to be meaningful.
