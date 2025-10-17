@@ -14,7 +14,10 @@ Quantum Computing Stack Exchange ([QCSE](https://quantumcomputing.stackexchange.
 
 If we categorize questions according to their tag (indicates what the question topic is), we find a steep increase in QEC-related tags (left). But this hides a [huge drop](https://quantumcomputing.meta.stackexchange.com/questions/669/why-the-lull-in-traffic-is-it-network-wide) in the total number of user questions (right):
 
-<img src="/assets/2025-09-06/qcse_fractions.png" alt="QEC question fractions" style="width: 80%; max-width: 600px;">
+<div style="display: flex; justify-content: center;">
+  <img src="/assets/2025-09-06/qcse_fractions.png" alt="QEC question fractions" style="width: 80%; max-width: 600px;">
+</div>
+
 *The average fraction of questions with a QEC-related is approaching 50% (shading reflects the confidence interval assuming a Binomial distribution, just to give an impression of variance). Total QCSE usage has been trending downward in the last 12 months, but there's still a steady stream of QEC interest.*
 
 The drop in questions coincides with the `o1` GPT model being released. This makes sense: Reasoning models are usually good at answering basic questions, and even more so when there is a lot of relevant source material available on the internet. But (right now), out-of-the-box AI chatbots are weak at coding tasks involving newer packages (e.g. there's few code examples to scrape from stackoverflow). So the tag for `stim` (a popular but recent python package for QEC research) continues to go strong.
@@ -25,7 +28,10 @@ This is at least _consistent_ with a trend in research interest towards QEC, but
 
 If we categorize every `quant-ph` arXiv submission according to keywords appearing in its abstract+title[^1], we can get a _rough idea_ of trends in manuscript topics. After assembling a reasonable set of keywords (see Methods) for QEC-related submissions, and also preparing a set of keywords for "noisy intermediate scale quantum" (NISQ), we see this trend:
 
-<img src="/assets/2025-09-06/qec_nisq.png" alt="NISQ vs. QEC" style="width: 80%; max-width: 600px;">
+<div style="display: flex; justify-content: center;">
+  <img src="/assets/2025-09-06/qec_nisq.png" alt="NISQ vs. QEC" style="width: 80%; max-width: 600px;">
+</div>
+
 *The fraction of quant-ph arXiv submissions mentioning quantum error correction (and related topics) is trending upwards, while mentions of NISQ have flattened out.*
 
 So, publication activity in the area of QEC and fault tolerance is blowing up super-exponentially (as evidenced by a sharp increase in the _fraction_ of an already exponentially growing number of `quant-ph`). Meanwhile, NISQ has lost a bit of steam (now what are we supposed to do with all these noisy uncorrected qubits?). 
@@ -36,7 +42,10 @@ While counting `quant-ph` submissions is a decent proxy for what researchers are
 
 [Scirate]() is an online ~~popularity contest~~ platform that lets people upvote and comment on arXiv submissions. It is used almost exclusively by the quantum computing research community. Usage of scirate is growing rapidly, as the number of `quant-ph` submissions balloons beyond what is easily skimmable in a daily email[^2]. I don't really know what an upvote on Scirate means[^3], but to match the social media theme of the site, we will say a paper is _cool_ if it gets a nontrivial number of upvotes on Scirate, and _uncool_ otherwise[^4]. 
 
-<img src="/assets/2025-09-06/qec_scirate.png" alt="QEC scirate question fractions" style="width: 80%; max-width: 600px;">
+<div style="display: flex; justify-content: center;">
+  <img src="/assets/2025-09-06/qec_scirate.png" alt="QEC scirate question fractions" style="width: 80%; max-width: 600px;">
+</div>
+
 *Among papers that get attention (at least 5 upvotes) on Scirate, QEC represents a growing fraction. It is a cool subfield. In contrast, NISQ is becoming less-cool even as its overall publication rate holds steady.*
 
 Here, we can see here that QEC-related manuscripts make up a growing fraction of cool submissions[^5]. Furthermore, this analysis shows that NISQ publications are, in some sense, becoming less popular even as the number of publications holds steady. There is an interesting disconnect between what the median researcher is willing to publish, versus what the median scirate user is willing to upvote.
@@ -53,7 +62,10 @@ Its great to be forward-looking, but the fantastic growth rate of research in QE
 
 Out of personal curiousity, I took a look at how QEC compares to another hot subfield, "quantum machine learning" (QML). Even with all the hype that QML has a (bad) reputation for, the growth rate for submissions in this subfield is actually slightly lower than QEC in the same time period! But, as is clear from Scirate, QML papers make up a shrinking fraction of the cool papers, and again we see a disconnect between publishing activity and scirate popularity. 
 
-<img src="/assets/2025-09-06/qml.png" alt="QEC scirate question fractions" style="width: 100%; max-width: 600px;">
+<div style="display: flex; justify-content: center;">
+  <img src="/assets/2025-09-06/qml.png" alt="QEC scirate question fractions" style="width: 100%; max-width: 600px;">
+</div>
+
 *The number of QML-related submissions is growing rapidly, but this topic is decidedly uncool as measured by Scirate voters.*
 
 In contrast with NISQ, QML algorithms are often designed to run on FTQCs, so this is fall in popularity is rather damning. What would it take to make QML cool again?
