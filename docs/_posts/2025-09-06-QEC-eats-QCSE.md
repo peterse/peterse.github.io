@@ -15,7 +15,7 @@ Quantum Computing Stack Exchange ([QCSE](https://quantumcomputing.stackexchange.
 If we categorize questions according to their tag (indicates what the question topic is), we find a steep increase in QEC-related tags (left). But this hides a [huge drop](https://quantumcomputing.meta.stackexchange.com/questions/669/why-the-lull-in-traffic-is-it-network-wide) in the total number of user questions (right):
 
 <div style="display: flex; justify-content: center;">
-  <img src="/assets/2025-09-06/qcse_fractions.png" alt="QEC question fractions" style="width: 80%; max-width: 800px;">
+  <img src="/assets/2025-09-06/qcse_fractions.png" alt="QEC question fractions" style="width: 100%; max-width: 800px;">
 </div>
 
 <div style="width:80%; margin:auto; font-size: 0.9em;">
