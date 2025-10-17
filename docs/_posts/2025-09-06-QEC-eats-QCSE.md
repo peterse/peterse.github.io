@@ -15,14 +15,16 @@ Quantum Computing Stack Exchange ([QCSE](https://quantumcomputing.stackexchange.
 If we categorize questions according to their tag (indicates what the question topic is), we find a steep increase in QEC-related tags (left). But this hides a [huge drop](https://quantumcomputing.meta.stackexchange.com/questions/669/why-the-lull-in-traffic-is-it-network-wide) in the total number of user questions (right):
 
 <div style="display: flex; justify-content: center;">
-  <img src="/assets/2025-09-06/qcse_fractions.png" alt="QEC question fractions" style="width: 80%; max-width: 600px;">
+  <img src="/assets/2025-09-06/qcse_fractions.png" alt="QEC question fractions" style="width: 80%; max-width: 800px;">
 </div>
 
 <div style="width:80%; margin:auto; font-size: 0.9em;">
   <em>
-    *The average fraction of questions with a QEC-related tag is approaching 50% (shading reflects the confidence interval assuming a Binomial distribution, just to give an impression of variance). Total QCSE usage has been trending downward in the last 12 months, but there's still a steady stream of QEC interest.*
+    The average fraction of questions with a QEC-related tag is approaching 50% (shading reflects the confidence interval assuming a Binomial distribution, just to give an impression of variance). Total QCSE usage has been trending downward in the last 12 months, but there's still a steady stream of QEC interest.
   </em>
 </div>
+
+<br>
 
 The drop in questions coincides with the `o1` GPT model being released. This makes sense: Reasoning models are usually good at answering basic questions, and even more so when there is a lot of relevant source material available on the internet. But (right now), out-of-the-box AI chatbots are weak at coding tasks involving newer packages (e.g. there's few code examples to scrape from stackoverflow). So the tag for `stim` (a popular but recent python package for QEC research) continues to go strong.
 
@@ -38,10 +40,11 @@ If we categorize every `quant-ph` arXiv submission according to keywords appeari
 
 <div style="width:80%; margin:auto; font-size: 0.9em;">
   <em>
-	*The fraction of quant-ph arXiv submissions mentioning quantum error correction (and related topics) is trending upwards, while mentions of NISQ have flattened out.*
+	The fraction of quant-ph arXiv submissions mentioning quantum error correction (and related topics) is trending upwards, while mentions of NISQ have flattened out.
   </em>
 </div>
 
+<br>
 
 So, publication activity in the area of QEC and fault tolerance is blowing up super-exponentially (as evidenced by a sharp increase in the _fraction_ of an already exponentially growing number of `quant-ph`). Meanwhile, NISQ has lost a bit of steam (now what are we supposed to do with all these noisy uncorrected qubits?). 
 
@@ -57,9 +60,11 @@ While counting `quant-ph` submissions is a decent proxy for what researchers are
 
 <div style="width:80%; margin:auto; font-size: 0.9em;">
   <em>
-	*Among papers that get attention (at least 5 upvotes) on Scirate, QEC represents a growing fraction. It is a cool subfield. In contrast, NISQ is becoming less-cool even as its overall publication rate holds steady.*
+	Among papers that get attention (at least 5 upvotes) on Scirate, QEC represents a growing fraction. It is a cool subfield. In contrast, NISQ is becoming less-cool even as its overall publication rate holds steady.
   </em>
 </div>
+
+<br>
 
 Here, we can see here that QEC-related manuscripts make up a growing fraction of cool submissions[^5]. Furthermore, this analysis shows that NISQ publications are, in some sense, becoming less popular even as the number of publications holds steady. There is an interesting disconnect between what the median researcher is willing to publish, versus what the median scirate user is willing to upvote.
 
@@ -76,13 +81,16 @@ Its great to be forward-looking, but the fantastic growth rate of research in QE
 Out of personal curiousity, I took a look at how QEC compares to another hot subfield, "quantum machine learning" (QML). Even with all the hype that QML has a (bad) reputation for, the growth rate for submissions in this subfield is actually slightly lower than QEC in the same time period! But, as is clear from Scirate, QML papers make up a shrinking fraction of the cool papers, and again we see a disconnect between publishing activity and scirate popularity. 
 
 <div style="display: flex; justify-content: center;">
-  <img src="/assets/2025-09-06/qml.png" alt="QEC scirate question fractions" style="width: 100%; max-width: 600px;">
+  <img src="/assets/2025-09-06/qml.png" alt="QEC scirate question fractions" style="width: 100%; max-width: 800px;">
 </div>
+
 <div style="width:80%; margin:auto; font-size: 0.9em;">
   <em>
-	*The number of QML-related submissions is growing rapidly, but this topic is decidedly uncool as measured by Scirate voters.*
+	The number of QML-related submissions is growing rapidly, but this topic is decidedly uncool as measured by Scirate voters.
   </em>
 </div>
+
+<br>
 
 In contrast with NISQ, QML algorithms are often designed to run on FTQCs, so this is fall in popularity is rather damning. What would it take to make QML cool again?
 
