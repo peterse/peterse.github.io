@@ -8,7 +8,7 @@
 layout: home
 ---
 
-I am a quantum scientist at Xanadu studying quantum machine learning. I was previously a postdoc and PhD student at University of Waterloo studying machine learning for error correction and topics at the intersection of quantum information and  learning theory. I also do quantum computing Q&A as <a href="https://quantumcomputing.stackexchange.com/users/1939/forky40">@forky40</a>.
+I am a quantum scientist at Xanadu studying quantum machine learning. I was previously a postdoc and PhD student at University of Waterloo studying machine learning for error correction and topics at the intersection of quantum information and  learning theory.
 
 
 <h2> Select publications </h2>
