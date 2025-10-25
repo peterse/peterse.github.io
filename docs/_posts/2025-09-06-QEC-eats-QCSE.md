@@ -8,7 +8,7 @@ Quantum error correction (QEC) is a hot research topic among quantum computing r
 
 ### QEC eats QCSE?
 
-Quantum Computing Stack Exchange ([QCSE](https://quantumcomputing.stackexchange.com/)) is a Q&A site for quantum information topics. Here we see more evidence of a shift in interest towards QEC, as reflected by trends in QCSE questions. Last month, for the first time ever, over half of the questions asked on QCSE were quantum error correction! Is this more evidence that interest in QEC displaced a broader curiousity about quantum computing?
+Quantum Computing Stack Exchange ([QCSE](https://quantumcomputing.stackexchange.com/)) is a Q&A site for quantum information topics. Here we see a shift in interest towards QEC, as reflected by trends in QCSE question topics. Last month, for the first time ever, over half of the questions asked on QCSE were quantum error correction! Is evidence that interest in QEC displaced a broader curiousity about quantum computing?
 
 **Not really.** Instead, the overall user base of QCSE is fleeing, while the number of QEC questions is holding strong. This is driven in part by a steady stream of questions about `stim`, a software library for simulating QEC whose creator - Craig Gidney - is very helpful and prolific on QCSE.
 
@@ -46,13 +46,13 @@ If we categorize every `quant-ph` arXiv submission according to keywords appeari
 
 <br>
 
-So, publication activity in the area of QEC and fault tolerance is blowing up super-exponentially (as evidenced by a sharp increase in the _fraction_ of an already exponentially growing number of `quant-ph`). Meanwhile, NISQ has lost a bit of steam (now what are we supposed to do with all these noisy uncorrected qubits?). 
+So, publication activity in the area of QEC and fault tolerance is blowing up super-exponentially (as evidenced by a sharp increase in the _fraction_ of an already exponentially growing number of `quant-ph` submissions). Meanwhile, NISQ has lost a bit of steam (now what are we supposed to do with all these noisy uncorrected qubits?). 
 
 While counting `quant-ph` submissions is a decent proxy for what researchers are interested in and spending time on, it doesn't tell us whether QEC is _cool_. 
 
 ### QEC eats Scirate?
 
-[Scirate]() is an online ~~popularity contest~~ platform that lets people upvote and comment on arXiv submissions. It is used almost exclusively by the quantum computing research community. Usage of scirate is growing rapidly, as the number of `quant-ph` submissions balloons beyond what is easily skimmable in a daily email[^2]. I don't really know what an upvote on Scirate means[^3], but to match the social media theme of the site, we will say a paper is _cool_ if it gets a nontrivial number of upvotes on Scirate, and _uncool_ otherwise[^4]. 
+[Scirate](scirate.com) is an online ~~popularity contest~~ platform that lets people upvote and comment on arXiv submissions. It is used almost exclusively by the quantum computing research community. Usage of scirate is growing rapidly, as the number of `quant-ph` submissions balloons beyond what is easily skimmable in a daily email[^2]. I don't really know what an upvote on Scirate means[^3], but to match the social media theme of the site, we will say a paper is _cool_ if it gets a nontrivial number of upvotes on Scirate, and _uncool_ otherwise[^4]. 
 
 <div style="display: flex; justify-content: center;">
   <img src="/assets/2025-09-06/qec_scirate.png" alt="QEC scirate question fractions" style="width: 80%; max-width: 600px;">
@@ -66,19 +66,19 @@ While counting `quant-ph` submissions is a decent proxy for what researchers are
 
 <br>
 
-Here, we can see here that QEC-related manuscripts make up a growing fraction of cool submissions[^5]. Furthermore, this analysis shows that NISQ publications are, in some sense, becoming less popular even as the number of publications holds steady. There is an interesting disconnect between what the median researcher is willing to publish, versus what the median scirate user is willing to upvote.
+Here, we can see here that QEC-related manuscripts make up a growing fraction of cool submissions[^5]. Furthermore, this analysis shows that NISQ publications are, in some sense, becoming less popular even as the number of publications holds steady[^6]. There is an interesting disconnect between what the median researcher is willing to publish, versus what the median scirate user is willing to upvote.
 
 
 ## Discussion
 
-The clear takeaway is that QEC's popularity is growing rapidly. In a way, this is both expected and healthy: we expect fault tolerance (FT) to be necessary for many of the promised speedups in quantum computing. NISQ was the idea that we could develop useful quantum algorithms before building an FTQC, but the revealed preferences of the quantum community cast doubt on that idea. We should perhaps keep an eye on this trend, since there will come a day when we have the FTQCs and now we need to run something on them.
+The clear takeaway is that QEC's popularity is growing rapidly. In a way, this is both expected and healthy: we expect fault tolerance (FT) to be necessary for many of the promised speedups in quantum computing. NISQ was, in some ways, the idea that we could deliver useful quantum algorithms before building an FTQC, but the revealed preferences of the quantum community cast doubt on that idea. 
 
-Its great to be forward-looking, but the fantastic growth rate of research in QEC leaves me wondering - what research comes after quantum error correction? For example, I strongly suspect that classical error correction makes up only a tiny fraction of computer science research today. Will QEC research go the same way as classical error correction?
+We should perhaps keep an eye on this trend -- there will come a day when we have FTQCs, and I hope that by then there is something useful to run on them. What balance is sustainable between efforts to get us to FTQCs versus finding tasks to do with FTQCs? For example, I imagine that classical error correction makes up a small fraction of computer science research today, though advancements in computing hardware are also an important source of progress. Which direction will QEC research go to remain relevant after quantum computers are already up and running?
 
 
 ### Bonus: is QML cool or uncool?
 
-Out of personal curiousity, I took a look at how QEC compares to another hot subfield, "quantum machine learning" (QML). Even with all the hype that QML has a (bad) reputation for, the growth rate for submissions in this subfield is actually slightly lower than QEC in the same time period! But, as is clear from Scirate, QML papers make up a shrinking fraction of the cool papers, and again we see a disconnect between publishing activity and scirate popularity. 
+Out of personal curiousity, I took a look at how QEC compares to another hot subfield, "quantum machine learning" (QML). Even with all the hype that QML has a (bad) reputation for, the growth rate for submissions in this subfield is actually lower than QEC in the same time period! But, as is clear from Scirate, QML papers make up a shrinking fraction of the cool papers, and again we see a disconnect between publishing activity and scirate popularity. 
 
 <div style="display: flex; justify-content: center;">
   <img src="/assets/2025-09-06/qml.png" alt="QEC scirate question fractions" style="width: 100%; max-width: 800px;">
@@ -143,16 +143,13 @@ QML hits:
     barren plateau: 307
 ```
 
-I used [SEDE](https://data.stackexchange.com/) and ChatGPT for analyzing QCSE trends, the [arXiv Kaggle dataset](https://www.kaggle.com/datasets/Cornell-University/arxiv) for `quant-ph` trends, and the `scirate` API for Scirate trends. 
-
-#### Acknowledgments
-
-I used the `scirate` API, so thanks to Vincent Russo.
+I used [SEDE](https://data.stackexchange.com/) and ChatGPT for analyzing QCSE trends, the [arXiv Kaggle dataset](https://www.kaggle.com/datasets/Cornell-University/arxiv) for `quant-ph` trends, and the `scirate` API for Scirate trends (so thanks to Vincent Russo).
 
 ---
 
 [^1]: The entire metadata for arXiv is available on Kaggle: [link](https://www.kaggle.com/datasets/Cornell-University/arxiv)
 [^2]: I mean this literally, in the sense that daily arXiv digest emails for `quant-ph` are now sometimes longer than the email length that gmail is willing to display by default, meaning that some submissions will not even appear in the email unless you [exploit arXiv's ordering system](https://peterse.github.io/2023/06/06/Early-bird-gets-the-worm.html).
-[^3]: Early on there was some debate among people using Scirate, and to this day it is unclear to me what an upvote on scirate means. This is not a new issue: e.g. see the conversations [here](https://groups.google.com/g/scirate/c/WAHKx8TAUo8). My personal guess is that the median scientist has a reflexive-but-exagerrated belief in their own objectivity, and is therefore extra susceptible to social persuasion. But to be useful, any theory of what a scite means should be grounded in the behavioral patterns we can observe on Scirate. 
-[^4]: This is tongue-in-cheek; please don't actually update your research tastes -- or any tastes really -- towards things that get ``likes'' on social media.
-[^5]: Its actually really hard to do statistics on Scirate behavior, since upvotes are highly nonstationary (the  number of daily Scirate users grows over time) but also have very limited statistics (less than 50ish papers per day with large fluctuations). For example, comparing a submission's scites to the average number of scites requires computing a moving average with a window that is small enough to reflect a roughly-stationary process but large enough to be meaningful.
+[^3]: Early on there was some debate among people using Scirate about what an upvote (scite) on scirate means, e.g. conversations [here](https://groups.google.com/g/scirate/c/WAHKx8TAUo8). I think the debate was never resolved, since I have no idea what a scite means. Whatever it means is probably not well thought out or deep. But I suspect that the median scientist is susceptible to social persuasion due to a reflexive-but-exagerrated belief in their own objectivity, so we should try to be careful how we react to seeing a bunch of upvotes on any particular article...
+[^4]: This is tongue-in-cheek; of course don't actually update your research tastes -- or any tastes really -- towards things that get ``likes'' on social media.
+[^5]: Its actually hard to do statistics on Scirate behavior, since upvotes are nonstationary (the average number of daily Scirate users grows over time) but also have very limited statistics (less than 50ish papers per day with large fluctuations). For example, comparing a submission's scites to the average number of scites requires computing a moving average with a window that is small enough to reflect a roughly-stationary process but large enough to be meaningful.
+[^6]: Alternative explanations: (1) The gross number of QEC researchers joining Scirate is higher than numbers of researchers in other fields. But this is why I set the threshold so low at 5 scites. (2) NISQ terminology is drifting over time, which is possible, but in some ways proves a similar point about the popularity of NISQ over time...
