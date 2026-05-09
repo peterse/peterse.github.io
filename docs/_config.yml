@@ -27,6 +27,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://peterse.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 google_verify: 2fZpv3V75OdXC4Jt8cJfMXAIvb-3h0cAVlHj-6aBeSE
 
+collections:
+  notes:
+    output: true
+    permalink: /notes/:name/
+
 markdown: kramdown
 
 minima:
