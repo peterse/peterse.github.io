@@ -8,12 +8,12 @@
 layout: home
 ---
 
-I am a quantum scientist at Xanadu studying quantum machine learning. I was previously a postdoc and PhD student at University of Waterloo studying machine learning for error correction and topics at the intersection of quantum information and  learning theory.
+I am a quantum scientist at Xanadu studying quantum machine learning. I was previously a postdoc and PhD student at University of Waterloo studying machine learning for error correction and other topics at the intersection of quantum information and learning theory.
 
 
 <h2> Select publications </h2>
- - _Sample importance for data-driven decoding._ <a href="https://arxiv.org/abs/2505.22741
-">2505.22741</a> (2025). 
+ - _Trapped by simplicity: When Transformers fail to learn from noisy features._ (<a href="https://openreview.net/forum?id=n5bPL58uMC">ICLR 2026</a>)
+ - _Sample importance for data-driven decoding._ <a href="https://arxiv.org/abs/2505.22741">2505.22741</a> (2025). 
  - _Generalization despite overfitting in quantum machine learning models._ <a href="https://quantum-journal.org/papers/q-2023-12-20-1210/">Quantum</a> 7 (2023).
  - _Qubit assignment using time reversal._ <a href="https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.3.040333">PRX Quantum</a> (2022).
 
