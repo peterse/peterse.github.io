@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The rising tide | Evan Peters (quantum)</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="The rising tide" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Special thanks to Pangram for providing API credits to support this research!" />
+<meta property="og:description" content="Special thanks to Pangram for providing API credits to support this research!" />
+<link rel="canonical" href="http://localhost:4000/2026/06/15/The-rising-tide-pt1.html" />
+<meta property="og:url" content="http://localhost:4000/2026/06/15/The-rising-tide-pt1.html" />
+<meta property="og:site_name" content="Evan Peters (quantum)" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-06-15T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The rising tide" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-06-15T00:00:00-04:00","datePublished":"2026-06-15T00:00:00-04:00","description":"Special thanks to Pangram for providing API credits to support this research!","headline":"The rising tide","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2026/06/15/The-rising-tide-pt1.html"},"url":"http://localhost:4000/2026/06/15/The-rising-tide-pt1.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Evan Peters (quantum)" />
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Evan Peters (quantum)</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">The rising tide</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2026-06-15T00:00:00-04:00" itemprop="datePublished">
+        Jun 15, 2026
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><em>Special thanks to <a href="https://www.pangram.com/">Pangram</a> for providing API credits to support this research!</em></p>
+
+<h2 id="preface">Preface</h2>
+
+<p>I will first share an experience that you (a researcher, in 2026) might also have had. The rest of this post will show that it is statistically likely that you’ve had this experience, whether you know it or not.</p>
+
+<p>I usually skim AI-generated text rather than actually reading it. Partly this is a defense mechanism: I have limited time and attention to read things, but nobody expends their limited time and attention to generate pure LLM text. Beyond this, AI writing usually lacks <em>crystalline</em> structure: at a high level it sounds fine, but upon careful reading the phrasing and sequences of words lack precision and conciseness. The parts of the text are lumped together amorphously, and the final product gives me brain fog if I attend to it with any real effort. It is like looking closer at a nice indoor plant and then noticing that it’s a fake: the leaves lack veins, the ribs are just colored in, the branches have an unnatural regularity.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<p>While I was recently reading the abstract of a preprint on arXiv, I felt this characteristic brain fog setting in right after reading  “…identifies XXX not only as a YYY, but also as a ZZZ…”. A couple of online AI detection tools agreed with my suspicion that the abstract was entirely AI-generated.</p>
+
+<p>This immediately raised the question: What fraction of <code class="language-plaintext highlighter-rouge">quant-ph</code> abstracts on arXiv are generated by AI, and how has that changed over time? Probably God only knows. In this post, we will rather answer the related question:</p>
+
+<div style="max-width:600px; background-color:#e6f3fb; border:1px solid #222; padding:1em; margin:1.5em auto;">
+  How has the fraction of <code>quant-ph</code> abstracts on arXiv <em>detected as AI-generated by AI detection software</em> changed over time?
+</div>
+
+<h3 id="disclaimer">DISCLAIMER</h3>
+
+<p><strong>AI detection software is not perfect.</strong> AI detection software can get things wrong: they are black box algorithms that cannot always provide reasoning to support their prediction. They can return false positives and negatives. They should be used responsibly - or perhaps not at all - for consequential decisions about scientific papers.</p>
+
+<p>In that case, can we trust that an upwards trend in AI detection rates reflects an actual increase in AI usage? It might be that AI detection is useful for learning the <em>statistics</em> of AI-usage even if we do not fully trust the detectors on any particular input text. If so, we can consider two confounding reasons why the rate of AI-detection scientific preprints might increase over time:</p>
+
+<ol>
+  <li>
+    <p><em>Memorizing the training set</em>: If pre-chatGPT arXiv were used as training data for AI detection software, this could give the illusion of a trend where there is none<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>. This is best explained by an example: if 2022 has a 0% detection rate and 2026 has a 50% detection rate, we could either conclude: (i) the rate of AI-generated abstracts increased from 0% to 50%, or (ii) the AI detector outputs “human” if the abstract was labelled as “human” in the training data, and otherwise outputs a coinflip. We will soon see that this explanation is not consistent with observed trends.</p>
+  </li>
+  <li>
+    <p><em>AI detectors might be low-quality</em>: Another possibility is that AI detection software is uniformly unreliable. However, if we observe a trend in increasing AI detection rates, then attributing this trend to unreliability would require AI detection to become systematically less reliable <em>specifically</em> for recently-created text. This seems unlikely.</p>
+  </li>
+</ol>
+
+<p>To summarize: If we see a gradual trend of increasing AI detection rates, this probably reflects an actual increase in AI usage over time.</p>
+
+<h3 id="all-you-zombies">All you zombies…</h3>
+
+<p>Below, we estimate the fraction of <code class="language-plaintext highlighter-rouge">quant-ph</code> abstracts detected as “100% AI-generated” by the popular AI-detector Pangram, from October 2022 (one month before ChatGPT) through April 2026.</p>
+
+<div style="display: flex; justify-content: center;">
+  <img src="/assets/2026-06-07/figure1.png" alt="Fraction of AI-generated abstracts (pangram)" style="width: 80%; max-width: 600px;" />
+</div>
+
+<div style="width:80%; margin: 0 auto 1.5em; font-size: 0.9em;">
+  <em>
+   Figure 1: Abstracts detected as AI-generated have increased gradually. Since there is no specific time after which the rate suddenly increases, we should not attribute differences in detection rate over time to memorization of training data. The fraction of abstracts is estimated by using Pangram's AI detector on ~20% of `quant-ph` abstracts from each month, except October 2022 and April 2026 for which ~99% of abstracts were analyzed. Error bars are 95% confidence intervals (Wilson). 
+  </em>
+</div>
+
+<p>Clearly AI is now widely involved in the scientific writing process. To get a feel of how this translates to total submissions, here is a plot of monthly <code class="language-plaintext highlighter-rouge">quant-ph</code> submissions over a longer time span, with an exponential fit from 2008 to July 2024 (when the detection rate of AI-generated abstracts starts to rise<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>).</p>
+
+<div style="display: flex; justify-content: center;">
+  <img src="/assets/2026-06-07/figure2.png" alt="Line go up." style="width: 80%; max-width: 600px;" />
+</div>
+
+<div style="width:80%; margin: 0 auto 1.5em; font-size: 0.9em;">
+  <em>
+   Figure 2: It is hard to explain the anomalous growth in `quant-ph` submissions from 2024-2026 using historical trends.
+  </em>
+</div>
+
+<p>For a fun comparison, we can now overlay the estimated number of AI-detected abstracts (Fig. 1) onto the number of excess submissions (versus historical trends):</p>
+
+<div style="display: flex; justify-content: center;">
+  <img src="/assets/2026-06-07/figure3.png" alt="Liftoff." style="width: 80%; max-width: 600px;" />
+</div>
+
+<div style="width:80%; margin: 0 auto 1.5em; font-size: 0.9em;">
+  <em>
+   Figure 3: The number of abstracts detected as 100% AI takes off sharply after 2024. Coincidentally, the number of `quant-ph` submissions takes off sharply after 2024.
+  </em>
+</div>
+
+<h2 id="among-us">Among us</h2>
+
+<p>It would be nice if we could check how human scientists react to preprints with (purportedly) AI-generated abstracts. <a href="scirate.com">Scirate</a> is a platform with an active user base of mostly quantum information researchers who upvote and comment on arXiv submissions. We can <em>roughly</em> think of preprints that receive many upvotes as being interesting or relevant to the community.</p>
+
+<p>So, we can compare the upvotes for preprints with abstracts flagged as AI-generated versus human: If the distributions are similar, then the people giving upvotes are either unknowing or indifferent to whether the abstract was human-generated:</p>
+
+<div style="display: flex; justify-content: center;">
+  <img src="/assets/2026-06-07/figure4.png" alt="Guess who." style="width: 80%; max-width: 600px;" />
+</div>
+
+<div style="width:80%; margin: 0 auto 1.5em; font-size: 0.9em;">
+  <em>
+     Figure 4: Class X is the distribution of scites awarded to all April 2026 abstracts detected as Y. Highlight this block to reveal which is which: 
+     <span style="background-color: #000; color: #000; padding: 2px 4px; border-radius: 3px; user-select: all;">Class 1='Human', Class 2='AI'.</span>
+  </em>
+</div>
+
+<p>There are similar distributions of upvotes for preprints with abstracts detected as AI versus human. So the AI-generated science should not be thought of as some pile of junk hidden in the shadows, mass produced and written by no one and read by no one. Rather, it is among us.</p>
+
+<h2 id="discussion">Discussion</h2>
+
+<p>Things are moving fast. A few recent examples:</p>
+<ul>
+  <li>In May, ArXiv  <a href="https://www.nature.com/articles/d41586-026-01595-5">announced a ban</a> for author(s) who have submitted preprints with incontrovertible evidence of AI usage.</li>
+  <li>In June, Neurips discussed <a href="https://blog.neurips.cc/2026/06/02/ai-generated-papers-in-the-neurips-2026-position-paper-track/">desk-rejection of position paper submissions</a> found to be substantially AI-generated.</li>
+</ul>
+
+<p>Despite these interventions, in the near future you will be regularly and unknowingly be reading AI-generated text in your subfield. A substantial portion of the research itself (theory, numerics, original ideas) may even be AI-generated with only limited human supervision. We are now entering an era of Klankerphysik.</p>
+
+<p>AI-generated text in research is not definitively bad. LLMs increase the rate at which we are able to share results (in the form of completed manuscripts), or improve the clarity of text from native and non-native English speakers alike. AI usage will lead to high-quality science and probably increase the progress of research at almost every level.</p>
+
+<p>However, the incentives structures of research work are not adapted to this new way of doing science. Writing 10 papers in a year will now be only weak proof of significant effort, productivity, or accomplishment. Automatically-indexed citation counts and h-indices will be even weaker evidence of significance. Similarly, we will need better systems prevent us from wasting each other’s time. I do not want to serve as a referee for substantially AI-generated text (especially not for free). And you probably do not want your human-written submission refereed by an LLM. We will need to find balance.</p>
+
+<p>Or perhaps this is a chance for a complete makeover on dissemination of science. Richard Hamming, who lived through and propelled widespread adoption of early scientific computing, wrote, “it has rarely proved practical to produce exactly the same product by machines as we produced by hand”<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup>. Succinctly: If you don’t want to write an abstract, maybe just don’t!</p>
+
+<p>Together we must decide on how to coexist with automated research.</p>
+
+<h3 id="methods">Methods</h3>
+
+<ul>
+  <li>
+    <p>For Figure 1, I analyzed (almost)<sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote" rel="footnote">5</a></sup> all abstracts from April 2026 and October 2022, and then sampled roughly 20% of abstracts per month for all months in between. Abstracts were taken directly from the <a href="https://www.kaggle.com/datasets/Cornell-University/arxiv">arXiv metadata set</a> and were checked using the pangram API without any reformatting or cleanup. Cleaning up the special characters in a few example abstracts did not affect the AI prediction, though this may be an issue on a wider scale.</p>
+  </li>
+  <li>
+    <p>I reproduced part of Figure 1 using GPTZero’s AI detection software (~10% of all abstracts from November 2022 through March 2026, and ~99% of abstracts in October 2022 and April 2026). GPTZero detection showed a similar trend, while predicting a significantly larger fraction of AI-generated abstracts. This is consistent with reports that Pangram has a relatively low false-positive rate among available AI detectors.</p>
+  </li>
+  <li>
+    <p>For Figure 4 only, I used <em>both</em> pangram and GPTZero for AI detection on 1650 abstracts submitted in April 2026. I fetched scites (as of June 1) using Vincent Russo’s <code class="language-plaintext highlighter-rouge">scirate</code> API. Pangram is more conservative in predicting that text is AI-generated:</p>
+  </li>
+</ul>
+
+<div style="max-width: 600px; margin: 0 auto;">
+  <table>
+    <thead>
+      <tr>
+        <th style="background: #fff; border-top: 0; border-left: 0;"></th>
+        <th>GPTZero: AI</th>
+        <th>GPTZero: Human</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th><strong>Pangram: AI</strong></th>
+        <td style="text-align: center; background: #fff;">373</td>
+        <td style="text-align: center; background: #fff;">21</td>
+      </tr>
+      <tr>
+        <th><strong>Pangram: Human</strong></th>
+        <td style="text-align: center; background: #fff;">225</td>
+        <td style="text-align: center; background: #fff;">847</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 id="acknowledgements">Acknowledgements</h3>
+
+<p>Huge thanks to Pangram for providing API credits to support this research. Thank you to Sasha Hrytseniak and Elies Gil-Fuster for feedback on earlier drafts of this post. Thank you to ArXiv for use of its open access interoperability. I used LLMs and agents for assistance gathering and analyzing the data presented above. I wrote 100% of the text in this post.</p>
+
+<hr />
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>I believe that fake plants are an evil of modernity and that even beholding one drains a small part of one’s life essence from one’s body. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>I reached out to GPTZero and they would not provide any information about their training data. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>Alternatively, if we fit the trendline to pre-chatGPT (2008-2022) we get a shallower exponent. But since there does not seem to have been much AI usage before July 2024, the steeper trendline seems more appropriate. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>Hamming, Richard R. <em>The Art of doing science and engineering: Learning to learn.</em> Page 19. Stripe Press, 2020. <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:5" role="doc-endnote">
+      <p>There was a bug in my checkpoint code that saved API results after every 50 scans, combined with an off-by-one error from manually resetting data-taking runs. So I gathered 1650/1696 abstracts from April 2026 and 949/959 abstracts from October 2022. <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div><a class="u-url" href="/2026/06/15/The-rising-tide-pt1.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <!-- <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p> -->
+      </div>
+      <!-- <div class="footer-col">
+        <p></p>
+      </div> -->
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://github.com/peterse" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://www.linkedin.com/in/evan-peters-359322a7" target="_blank" title="linkedin">
+    <svg class="svg-icon grey">
+      <use xlink:href="/assets/minima-social-icons.svg#linkedin"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://quantumcomputing.stackexchange.com/users/1939/forky40" target="_blank" title="stackoverflow">
+    <svg class="svg-icon grey">
+      <use xlink:href="/assets/minima-social-icons.svg#stackoverflow"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer></body>
+
+</html>

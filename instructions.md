@@ -1,6 +1,9 @@
 cd docs
 bundle install
+bundle update
+bundle exec jekyll build
 bundle exec jekyll serve
+ 
 
 NOTES
  - if changing directory structure, copy `sitemap.xml` from docs/_site into root

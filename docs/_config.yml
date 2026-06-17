@@ -40,7 +40,6 @@ minima:
   # generate social links in footer
   social_links:
     - { platform: github,  user_url: "https://github.com/peterse" }
-    - { platform: twitter, user_url: "https://twitter.com/e6peters" }
     - { platform: linkedin, user_url: "https://www.linkedin.com/in/evan-peters-359322a7" }
     - { platform: stackoverflow, user_url: "https://quantumcomputing.stackexchange.com/users/1939/forky40" }
     # - { platform: orcid, user_url: "https://orcid.org/my-orcid?orcid=0000-0001-7083-6733"}
